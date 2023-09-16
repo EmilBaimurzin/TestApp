@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentJokesList">
+
+    <fragment
+        android:id="@+id/fragmentJokesList"
+        android:name="com.chuck.list.ui.FragmentJokesList"
+        android:label="FragmentJokesList" >
+        <action
+            android:id="@+id/action_fragmentJokesList_to_fragmentDetails"
+            app:destination="@id/fragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.chuck.details.ui.FragmentDetails"
+        android:label="FragmentDetails" />
+</navigation>
